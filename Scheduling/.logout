@@ -1,0 +1,15 @@
+# @(#)Logout 1.2 86/10/08 SMI
+############################################################
+#
+#         .logout file
+#
+#         Read in when you exit from the login shell.
+#         For performing housekeeping while your are away.
+#
+############################################################
+
+
+clear
+echo "`hostname`: `whoami` logged out at `date`"
+
+if (-r /etc/motd) cat /etc/motd

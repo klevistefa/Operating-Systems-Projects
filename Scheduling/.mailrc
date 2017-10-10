@@ -1,0 +1,3 @@
+set askcc
+set editheaders
+set indentprefix=">"

@@ -1,0 +1,32 @@
+#
+# This is a sample procmail rcfile for CIMS users.  If you want to
+# customize this file, refer to the procmailrc(5) and procmailrc(5)
+# man pages.
+# 
+
+# If you are on a mailinglist (e.g. everybody@cims) and 
+# don't want those mails treated as spam, uncomment and modify
+# the next 3 lines.
+#:0:
+#* ^TOeverybody
+#$DEFAULT
+
+# Mails to our mailman lists are also tagged at the subject line,
+# e.g. Subject: [Dept] ..... for the mailman list dept@cs.  Uncomment
+# and modify the next 3 lines if you don't want them treated as spam.
+#:0:
+#* ^Subject:.*\[Dept\]
+#$DEFAULT 
+
+# Mail with a spam score of at least 10 is almost certainly spam.
+# Sort it into the mail folder "spam".
+:0:
+* ^X-Spam-Score:.*\*\*\*\*\*\*\*
+$HOME/spam 
+
+# Mail with a spam score of at least 3 is probably spam.
+# Sort it into the mail folder "probable-spam".
+:0:
+* ^X-Spam-Score:.*\*\*
+$HOME/probable-spam 
+
