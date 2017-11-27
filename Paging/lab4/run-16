@@ -1,0 +1,15 @@
+The machine size is 1000.
+The page size is 40.
+The process size is 400.
+The job mix number is 4.
+The number of references per process is 5000.
+The replacement algorithm is lifo.
+The level of debugging output is 0
+
+Process 1 had 960 faults and 8.301985370950888 average residency.
+Process 2 had 298 faults and 7.658620689655172 average residency.
+Process 3 had 990 faults and 9.297160243407708 average residency.
+Process 4 had 10 faults.
+     With no evictions, the average residence is undefined.
+
+The total number of faults is 2258 and the overall average residency is 8.657859381997312.
